@@ -1,0 +1,54 @@
+
+
+.ul{
+    padding: 10px;
+    list-style: none;
+    color: white;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ul li{
+    padding: 5px;
+    list-style: none;
+}
+
+
+.container{
+    display: grid;
+    border: 1px solid black;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "menu" "seccion-principal" "pie-de-pagina";
+
+}
+nav{
+    padding: 5px;
+    grid-area: menu ;
+    background-color: red;
+    color:white;
+}
+
+main{
+    grid-area: seccion-principal;
+    padding: 0px;
+
+}
+
+.button{
+    background-color: blue;
+    
+}
+
+.paginado{
+    list-style: none;
+    display: flex;
+}
+
+footer{
+    grid-area: pie-de-pagina;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
